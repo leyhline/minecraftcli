@@ -38,6 +38,6 @@ func main() {
 	host, port, _ := SplitHostPort(address)
 	handshake(conn, host, port)
 	request(conn)
-	data, slpRes := response(conn)
-	fmt.Printf("%s\n%+v\n", data, slpRes)
+	_, slpRes := response(conn)
+	fmt.Printf("%+v\n", slpRes)
 }

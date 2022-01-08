@@ -34,6 +34,10 @@ type SLPResponse struct {
 	Players struct {
 		Max int
 		Online int
+		Sample []struct {
+			Id string
+			Name string
+		}
 	}
 	Version struct {
 		Name string
